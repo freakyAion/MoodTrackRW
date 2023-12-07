@@ -27,7 +27,7 @@ const App = () => {
 		<ConfigProvider>
 			<AdaptivityProvider>
 				<AppRoot>
-					<SplitLayout popout={popout}>
+					<SplitLayout>
 						<SplitCol>
 							<View activePanel={activePanel}>
 								<Home id='home' fetchedUser={fetchedUser} go={go} />
