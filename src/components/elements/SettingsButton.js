@@ -1,9 +1,9 @@
 import React from 'react';
-import Button from '@vkontakte/vkui';
+import {Button} from '@vkontakte/vkui';
 
-import './styles/SettingsButton.css'
+import './styles/SettingsButton.css'    
 
-const SettingsButton = ({devmode}) => {
+const SettingsButton = ({devmode, go}) => {
     let testText = null;
 
     if (devmode) {
@@ -17,4 +17,4 @@ const SettingsButton = ({devmode}) => {
 		</Button>
     );
 };
-export default SettingsButton
+export {SettingsButton};

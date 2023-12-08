@@ -32,7 +32,8 @@ const App = () => {
 
 	const toggleDev = (() => {
 		if (devmode == false) setDevMode(true);
-		setDevMode(true);
+		else setDevMode(false);
+		сonsole.log(devmode);
 	})
 
 	return (
@@ -43,11 +44,13 @@ const App = () => {
 						<SplitCol>
 							<View activePanel={activePanel}>
 								<Home devmode={devmode} id='home' go={go} />
+								<Settings devmode={devmode} toggleDev={toggleDev} id='settings' go={go}/>
+								{/* 
 								<Calendar devmode={devmode} id='calendar' go={go}/>
 								<EmotionMenu devmode={devmode} id='emoMenu' go={go}/>
 								<EmotionScreen devmode={devmode} id='emotionWindow' go={go}/>
-								<Settings devmode={devmode} toggleDev={toggleDev} id='settings' go={go}/>
 								<Diagram devmode={devmode} id='diagram' go={go}/>
+								*/}	
 							</View>
 						</SplitCol>
 					</SplitLayout>
