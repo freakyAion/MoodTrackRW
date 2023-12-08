@@ -9,6 +9,7 @@ import Settings from './components/panels/Settings';
 import EmotionMenu from './components/panels/EmotionMenu'
 import EmotionScreen from './components/panels/EmotionScreen';
 import Diagram from './components/panels/Diagram';
+import {getDayData} from './DataBase.js'
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('home');
@@ -33,8 +34,14 @@ const App = () => {
 	const toggleDev = (() => {
 		if (devmode == false) setDevMode(true);
 		else setDevMode(false);
-		сonsole.log(devmode);
+		console.log("Devmode has been toggled");
 	})
+
+	var todayEmotions;
+	var todayNotes;
+	var todayTags;
+
+	getDayData("", "", todayEmotions, todayNotes, todayTags);
 
 	return (
 		<ConfigProvider>
@@ -43,11 +50,11 @@ const App = () => {
 					<SplitLayout>
 						<SplitCol>
 							<View activePanel={activePanel}>
-								<Home devmode={devmode} id='home' go={go} />
+								<Home devmode={devmode} emotions={todayEmotions} id='home' go={go} />
 								<Settings devmode={devmode} toggleDev={toggleDev} id='settings' go={go}/>
 								{/* 
 								<Calendar devmode={devmode} id='calendar' go={go}/>
-								<EmotionMenu devmode={devmode} id='emoMenu' go={go}/>
+								<EmotionMenu devmode={devmode} id='emotionMenu' go={go}/>
 								<EmotionScreen devmode={devmode} id='emotionWindow' go={go}/>
 								<Diagram devmode={devmode} id='diagram' go={go}/>
 								*/}	

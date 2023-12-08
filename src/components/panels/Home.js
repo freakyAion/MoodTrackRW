@@ -1,9 +1,9 @@
 import React from 'react';
-import {SettingsButton} from '../elements/SettingsButton'
-
+import { SettingsButton } from '../elements/SettingsButton'
+import { Navbar} from '../elements/Navbar'
 import { Panel, PanelHeader, Header, Button, Group, Cell, Div, Avatar } from '@vkontakte/vkui';
 
-const Home = ({ id, go, devmode }) => {
+const Home = ({ id, go, devmode, todayEmotions }) => {
 	let panelHeader = null;
   
 	if (devmode) {
@@ -19,7 +19,7 @@ const Home = ({ id, go, devmode }) => {
 	}
 
 	let today = GetCurrentDate();
-  
+
 	return (
 	  	<Panel id={id}>
 			{panelHeader}
@@ -31,7 +31,7 @@ const Home = ({ id, go, devmode }) => {
 					<p>{today}</p>
 		  		</Div>
 		  		<Div className='Footer'>
-
+					<Navbar devmode={devmode} go={go}/>
 		  		</Div>
 			</Group>
 	  	</Panel>

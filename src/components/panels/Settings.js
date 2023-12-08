@@ -4,15 +4,17 @@ import {HomeButton} from '../elements/HomeReturnButton';
 
 import { Panel, PanelHeader, Header, Button, Group, Cell, Div, Avatar } from '@vkontakte/vkui';
 
+import './styles/Global.css';
+
 const Settings = ({ id, go, devmode, toggleDev }) => {
 	let panelHeader = null;
   
 	if (devmode) {
-	    panelHeader = <PanelHeader>Home Screen</PanelHeader>;
+	    panelHeader = <PanelHeader>Settings Screen</PanelHeader>;
 	}
   
 	return (
-	    <Panel id={id}>
+	    <Panel className='background' id={id}>
 		    {panelHeader}
 		    <Group>
 		        <Div className='Header'>
