@@ -4,6 +4,11 @@ import { View, ScreenSpinner, AdaptivityProvider, AppRoot, ConfigProvider, Split
 import '@vkontakte/vkui/dist/vkui.css';
 
 import Home from './components/panels/Home';
+import Calendar from './components/panels/Calendar';
+import Settings from './components/panels/Settings';
+import EmotionMenu from './components/panels/EmotionMenu'
+import EmotionScreen from './components/panels/EmotionScreen';
+import Diagram from './components/panels/Diagram';
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('home');
@@ -23,6 +28,13 @@ const App = () => {
 		setActivePanel(e.currentTarget.dataset.to);
 	};
 
+	const [devmode, setDevMode] = useState(false);
+
+	const toggleDev = (() => {
+		if (devmode == false) setDevMode(true);
+		setDevMode(true);
+	})
+
 	return (
 		<ConfigProvider>
 			<AdaptivityProvider>
@@ -30,7 +42,12 @@ const App = () => {
 					<SplitLayout>
 						<SplitCol>
 							<View activePanel={activePanel}>
-								<Home id='home' fetchedUser={fetchedUser} go={go} />
+								<Home devmode={devmode} id='home' go={go} />
+								<Calendar devmode={devmode} id='calendar' go={go}/>
+								<EmotionMenu devmode={devmode} id='emoMenu' go={go}/>
+								<EmotionScreen devmode={devmode} id='emotionWindow' go={go}/>
+								<Settings devmode={devmode} toggleDev={toggleDev} id='settings' go={go}/>
+								<Diagram devmode={devmode} id='diagram' go={go}/>
 							</View>
 						</SplitCol>
 					</SplitLayout>
