@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Inter:wght@100;200;300;500;600;700;800;900&display=swap');
+
+.emotionButton {
+    width: 244px;
+    background-color: transparent;
+    border: black;
+}
+
+.buttonСontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: auto;
+}
+
+.imgContent{  
+    display: flex;
+}
+
+.textContent {
+    display: flex;
+}
+
+.textContainer{
+    align-items: center;
+}
+
+.text {
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+}
+
+.img {
+    margin-right: auto;
+}

@@ -1,0 +1,18 @@
+.EmotionMenu {
+    display: flex;
+}
+
+.Content {
+    display: flex;
+    align-items: center;
+}
+
+.emotionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.blocs {
+    align-items: center;
+}
