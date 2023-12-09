@@ -1,6 +1,7 @@
 import React from 'react';
-import { SettingsButton } from '../elements/SettingsButton'
-import { Navbar} from '../elements/Navbar'
+import { SettingsButton } from '../elements/SettingsButton';
+import { Navbar } from '../elements/Navbar';
+import { Vial } from '../elements/Vial';
 import { Panel, PanelHeader, Header, Button, Group, Cell, Div, Avatar } from '@vkontakte/vkui';
 
 const Home = ({ id, go, devmode, todayEmotions }) => {
@@ -29,6 +30,7 @@ const Home = ({ id, go, devmode, todayEmotions }) => {
 		  		</Div>
 		  		<Div className='Content'>
 					<p>{today}</p>
+
 		  		</Div>
 		  		<Div className='Footer'>
 					<Navbar devmode={devmode} go={go}/>
