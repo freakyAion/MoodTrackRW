@@ -1,8 +1,9 @@
 import React from 'react';
 
-import {HomeButton} from '../elements/HomeReturnButton';
-
+import { HomeButton } from '../elements/HomeReturnButton';
 import { Panel, PanelHeader, Header, Button, Group, Cell, Div, Avatar } from '@vkontakte/vkui';
+
+import "./styles/Global.css";
 
 const Calendar = ({ id, go, devmode, toggleDev }) => {
 	let panelHeader = null;

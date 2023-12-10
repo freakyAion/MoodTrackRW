@@ -1,5 +1,4 @@
 import React from 'react';
-import {Button} from '@vkontakte/vkui';
 
 import './styles/HomeReturn.css'    
 
@@ -11,10 +10,10 @@ const HomeButton = ({devmode, go}) => {
     }
 
     return(
-        <Button className='homeButton' onClick={go} data-to="home">
+        <button className='homeButton' onClick={go} data-to="home">
 			<img className="image"/>
             <p>{testText}</p>
-		</Button>
+		</button>
     );
 };
 export {HomeButton};

@@ -9,7 +9,9 @@ import Settings from './components/panels/Settings';
 import EmotionMenu from './components/panels/EmotionMenu'
 import EmotionScreen from './components/panels/EmotionScreen';
 import Diagram from './components/panels/Diagram';
-import {getDayData} from './DataBase.js'
+import { getDayData } from './DataBase.js'
+
+import './components/panels/styles/Global.css'
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('home');
@@ -44,12 +46,12 @@ const App = () => {
 	getDayData("", "", todayEmotions, todayNotes, todayTags);
 
 	return (
-		<ConfigProvider>
+		<ConfigProvider appearance="light">
 			<AdaptivityProvider>
 				<AppRoot>
 					<SplitLayout>
 						<SplitCol>
-							<View activePanel={activePanel}>
+							<View className="Group" activePanel={activePanel}>
 								<Home devmode={devmode} emotions={todayEmotions} id='home' go={go} />
 								<Settings devmode={devmode} toggleDev={toggleDev} id='settings' go={go}/>
 								<EmotionMenu devmode={devmode} id='emotionMenu' go={go}/>

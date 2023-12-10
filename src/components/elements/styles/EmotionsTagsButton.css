@@ -6,7 +6,7 @@
     border: black;
 }
 
-.buttonСontent {
+.buttonContent {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

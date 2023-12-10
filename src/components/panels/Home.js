@@ -4,6 +4,8 @@ import { Navbar } from '../elements/Navbar';
 import { Vial } from '../elements/Vial';
 import { Panel, PanelHeader, Header, Button, Group, Cell, Div, Avatar } from '@vkontakte/vkui';
 
+import "./styles/Global.css";
+
 const Home = ({ id, go, devmode, todayEmotions }) => {
 	let panelHeader = null;
   
@@ -22,9 +24,9 @@ const Home = ({ id, go, devmode, todayEmotions }) => {
 	let today = GetCurrentDate();
 
 	return (
-	  	<Panel id={id}>
+	  	<Panel className='Panel' id={id}>
 			{panelHeader}
-			<Group>
+			<Group className='Group'>
 		  		<Div className='Header'>
 					<SettingsButton devmode={devmode} go={go}/>
 		  		</Div>

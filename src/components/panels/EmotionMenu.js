@@ -9,7 +9,10 @@ import Normal from '../../components/img/Normal.svg';
 import Bad from '../../components/img/Bad.svg';
 import Awful from '../../components/img/Awful.svg';
 
-const EmotionMenu = ({ id, go, devmode, todayEmotions }) => {
+import "./styles/Global.css";
+import "./styles/EmotionMenu.css"
+
+const EmotionMenu = ({ id, go, devmode}) => {
 	let panelHeader = null;
   
 	if (devmode) {
@@ -32,25 +35,24 @@ const EmotionMenu = ({ id, go, devmode, todayEmotions }) => {
 		  		<Div className='Content'>
 					{/*<p>{today}</p>*/}
 					<Div className='emotionContainer'>
-						<Div className='blocs'>
+						<Div className='button'>
 							<EmotionsTagsButton devmode={devmode} go={go} image={Great} text={textGreat}/>
 						</Div>
-						<Div className='blocs'>
+						<Div className='button'>
 							<EmotionsTagsButton devmode={devmode} go={go} image={Good} text={textGood}/>
 						</Div>
-						<Div className='blocs'>
+						<Div className='button'>
 							<EmotionsTagsButton devmode={devmode} go={go} image={Normal} text={textNormal}/>
 						</Div>
-						<Div className='blocs'>
+						<Div className='button'>
 							<EmotionsTagsButton devmode={devmode} go={go} image={Bad} text={textBad}/>
 						</Div>
-						<Div className='blocs'>
+						<Div className='button'>
 							<EmotionsTagsButton devmode={devmode} go={go} image={Awful} text={textAwful}/>
 						</Div>
 					</Div>
 		  		</Div>
 		  		<Div className='Footer'>
-					<Navbar devmode={devmode} go={go}/>
 		  		</Div>
 			</Group>
 	  	</Panel>

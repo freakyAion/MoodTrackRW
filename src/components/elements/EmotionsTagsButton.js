@@ -12,7 +12,7 @@ const EmotionsTagsButton = ({devmode, go, image, text}) => {
 
     return(
         <button className='emotionButton' onClick={go}>
-            <div className="buttonСontent">
+            <div className="buttonContent">
                 <div className="imgContent">
                     <div className="imgContainer">
                         <img className="img" src={image} />

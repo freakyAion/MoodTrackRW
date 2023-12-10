@@ -11,10 +11,10 @@ const SettingsButton = ({devmode, go}) => {
     }
 
     return(
-        <Button className='settingsButton' onClick={go} data-to="settings">
+        <button className='settingsButton' onClick={go} data-to="settings">
 			<img className="image"/>
             <p>{testText}</p>
-		</Button>
+		</button>
     );
 };
 export {SettingsButton};
