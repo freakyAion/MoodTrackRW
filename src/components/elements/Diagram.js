@@ -15,11 +15,11 @@ const data = {
   ],
 };
 
-const UserDiogramma = () => {
+const Diagram = () => {
   return (
     <div>
       <Pie data={data} />
     </div>
   );
 };
-export default UserDiogramma;
+export default Diagram;

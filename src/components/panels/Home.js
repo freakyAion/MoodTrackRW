@@ -7,6 +7,7 @@ import { Panel, PanelHeader, Header, Button, Group, Cell, Div, Avatar } from '@v
 import "./styles/Global.css";
 
 const Home = ({ id, go, devmode, todayEmotions }) => {
+	
 	let panelHeader = null;
   
 	if (devmode) {

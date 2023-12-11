@@ -8,7 +8,7 @@ import Calendar from './components/panels/Calendar';
 import Settings from './components/panels/Settings';
 import EmotionMenu from './components/panels/EmotionMenu'
 import EmotionScreen from './components/panels/EmotionScreen';
-import Diagram from './components/panels/Diagram';
+import DiagramScreen from './components/panels/DiagramScreen';
 import { getDayData } from './DataBase.js'
 
 import './components/panels/styles/Global.css'
@@ -57,7 +57,7 @@ const App = () => {
 								<EmotionMenu devmode={devmode} id='emotionMenu' go={go}/>
 								<Calendar devmode={devmode} id='calendar' go={go}/>
 								<EmotionScreen devmode={devmode} id='emotionWindow' go={go}/>
-								<Diagram devmode={devmode} id='diagram' go={go}/>	
+								<DiagramScreen devmode={devmode} id='diagram' go={go}/>	
 							</View>
 						</SplitCol>
 					</SplitLayout>
