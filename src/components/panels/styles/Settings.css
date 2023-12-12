@@ -1,0 +1,18 @@
+.settingButton{
+    align-items: center;
+    justify-content: flex-start;
+    width: 329px;
+    height: 80px;
+    padding: 0 20px;
+}
+
+.notificationsButton{
+
+}
+
+.settings{
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px 16px;
+
+}

@@ -39,11 +39,26 @@ const App = () => {
 		console.log("Devmode has been toggled");
 	})
 
-	var todayEmotions;
+	/*var todayEmotions;
 	var todayNotes;
 	var todayTags;
 
-	getDayData("", "", todayEmotions, todayNotes, todayTags);
+	getDayData("", "", todayEmotions, todayNotes, todayTags);*/
+
+	const [emotions, setEmotions] = useState(['empty', 'empty', 'empty']);
+	const [currentIndex, setCurrentIndex] = useState(2);
+
+	const emotionSwitch = (emotion) => {
+	    const updatedEmotions = [...emotions];
+	    updatedEmotions[currentIndex] = emotion;
+	    const nextIndex = (currentIndex - 1) % emotions.length;
+	    setEmotions(updatedEmotions);
+	    setCurrentIndex(nextIndex);
+		go;
+	};
+
+	// ^ this is old code that works. I didn't want to use it since our plan was to start over, but shitty communication from ^
+	// ^ one of the responsible people forces me to use these shortcuts. It pisses me off a whole bloody lotf                  ^
 
 	return (
 		<ConfigProvider appearance="light">
@@ -52,11 +67,11 @@ const App = () => {
 					<SplitLayout>
 						<SplitCol>
 							<View className="Group" activePanel={activePanel}>
-								<Home devmode={devmode} emotions={todayEmotions} id='home' go={go} />
+								<Home devmode={devmode} emotions={emotions} id='home' go={go} />
 								<Settings devmode={devmode} toggleDev={toggleDev} id='settings' go={go}/>
 								<EmotionMenu devmode={devmode} id='emotionMenu' go={go}/>
 								<Calendar devmode={devmode} id='calendar' go={go}/>
-								<EmotionScreen devmode={devmode} id='emotionWindow' go={go}/>
+								<EmotionScreen emotionSwitcher={emotionSwitch} devmode={devmode} id='emotionWindow' go={go}/>
 								<DiagramScreen devmode={devmode} id='diagram' go={go}/>	
 							</View>
 						</SplitCol>

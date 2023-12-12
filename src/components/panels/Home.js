@@ -7,7 +7,7 @@ import { Panel, PanelHeader, Header, Button, Group, Cell, Div, Avatar } from '@v
 import "./styles/Global.css";
 import "./styles/Home.css"
 
-const Home = ({ id, go, devmode, todayEmotions }) => {
+const Home = ({ id, go, devmode, emotions }) => {
 	
 	let panelHeader = null;
   
@@ -34,6 +34,7 @@ const Home = ({ id, go, devmode, todayEmotions }) => {
 		  		</Div>
 		  		<Div className='Content sizer'>
 					<p className='date'>{today}</p>
+					<Vial emotions={emotions}></Vial>
 		  		</Div>
 		  		<div className='Footer sizer'>
 					<Navbar devmode={devmode} go={go}/>

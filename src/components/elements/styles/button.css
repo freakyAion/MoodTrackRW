@@ -1,0 +1,22 @@
+.button{
+    background-color: #8BC0CF;
+    border: none;
+
+    display: flex;
+
+    color: #fff;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Comfortaa;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 83.333% <= Very useful info by me (@freakyAion) for me only */
+    letter-spacing: 0.1px;
+
+    border-radius: 15px;
+}
+
+.button:hover,
+.button:active{
+    background-color: #4B8597;
+}

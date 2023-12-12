@@ -5,8 +5,9 @@
     
 }
 
-.emotionContainer{
-
+.Content .button{
+    background-color: transparent;
+    border-radius: 0;
 }
 
 .button{

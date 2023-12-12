@@ -1,12 +1,14 @@
 .Content{
-    height: 82vh;
+    height: 73vh;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .Header{
+    margin-top: 30px;
 }
 
 .Footer{

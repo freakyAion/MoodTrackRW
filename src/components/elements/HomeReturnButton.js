@@ -2,6 +2,8 @@ import React from 'react';
 
 import './styles/HomeReturn.css'  
 
+import Home from '../img/Home.svg' 
+
 const HomeButton = ({devmode, go}) => {
     let testText = null;
 
@@ -11,7 +13,7 @@ const HomeButton = ({devmode, go}) => {
 
     return(
         <button className='homeButton' onClick={go} data-to="home">
-			<img className="image"/>
+			<img className="image" src={Home} alt="Главный Экран"/>
             <p>{testText}</p>
 		</button>
     );

@@ -34,7 +34,7 @@ const EmotionMenu = ({ id, go, devmode}) => {
 		  		</Div>
 		  		<Div className='Content sizer'>
 					{/*<p>{today}</p>*/}
-					<Div className='emotionContainer'>
+					
 						<Div className='button'>
 							<EmotionsTagsButton devmode={devmode} go={go} image={Great} text={textGreat}/>
 						</Div>
@@ -50,7 +50,7 @@ const EmotionMenu = ({ id, go, devmode}) => {
 						<Div className='button'>
 							<EmotionsTagsButton devmode={devmode} go={go} image={Awful} text={textAwful}/>
 						</Div>
-					</Div>
+					
 		  		</Div>
 		  		<Div className='Footer sizer'>
 		  		</Div>
