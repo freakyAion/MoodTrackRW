@@ -25,8 +25,6 @@ const EmotionMenu = ({ id, go, devmode}) => {
 	let textBad = "Плохо";
 	let textAwful = "Ужасно"
 
-	let beutiful = "beutiful"
-
 	return (
 	  	<Panel id={id}>
 			{panelHeader}
@@ -38,7 +36,7 @@ const EmotionMenu = ({ id, go, devmode}) => {
 					{/*<p>{today}</p>*/}
 					
 						<Div className='button'>
-							<EmotionsTagsButton devmode={devmode} go={go} image={Great} text={textGreat} dataTo={beutiful}/>
+							<EmotionsTagsButton devmode={devmode} go={go} image={Great} text={textGreat}/>
 						</Div>
 						<Div className='button'>
 							<EmotionsTagsButton devmode={devmode} go={go} image={Good} text={textGood}/>
@@ -50,7 +48,7 @@ const EmotionMenu = ({ id, go, devmode}) => {
 							<EmotionsTagsButton devmode={devmode} go={go} image={Bad} text={textBad}/>
 						</Div>
 						<Div className='button'>
-							<EmotionsTagsButton devmode={devmode} go={go} image={Awful} text={textAwful}/>
+							<EmotionsTagsButton data-to devmode={devmode} go={go} image={Awful} text={textAwful}/>
 						</Div>
 					
 		  		</Div>
