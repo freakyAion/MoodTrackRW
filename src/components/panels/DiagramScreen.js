@@ -16,17 +16,17 @@ const DiagramScreen = ({id, go, devmode}) => {
         <Panel className='Panel' id={id}>
             {panelHeader}
             <Group className='Group'>
-                <Div className='Header'>
+                <Div className='Header sizer'>
                     <HomeButton devmode={devmode} go={go}/>
                 </Div>
-                <Div className='Content'>
+                <Div className='Content sizer'>
                     <Div className="pieCharmDiogramm">
                         <div className="pieCharm">
                             <Diagram />
                         </div>
                     </Div>
                 </Div>
-                <Div className='Footer'>
+                <Div className='Footer sizer'>
 
                 </Div>
             </Group>

@@ -11,20 +11,20 @@ const Navbar = ({devmode, go}) => {
     }
 
     return(
-        <Group>
-            <button className='calendar' onClick={go} data-to="calendar">
+        <div className='navbar'>
+            <button className='calendar button' onClick={go} data-to="calendar">
 			    <img className="image"/>
                 <p>{testText[0]}</p>
 		    </button>
-            <button className='addEmotion' onClick={go} data-to="emotionMenu">
+            <button className='addEmotion button' onClick={go} data-to="emotionMenu">
                 <img className="image"/>
                 <p>{testText[1]}</p>
             </button>
-            <button className='diagram' onClick={go} data-to="diagram">
+            <button className='diagram button' onClick={go} data-to="diagram">
                 <img className="image"/>
                 <p>{testText[2]}</p>
             </button>
-        </Group>
+        </div>
     );
 };
 export {Navbar};

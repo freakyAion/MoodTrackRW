@@ -18,16 +18,16 @@ const Calendar = ({ id, go, devmode, toggleDev }) => {
 	    <Panel id={id}>
 		    {panelHeader}
 		    <Group>
-		        <Div className='Header'>
+		        <Div className='Header sizer'>
                     <HomeButton devmode={devmode} go={go}/>
 		        </Div>
-		        <Div className='Content'>
+		        <Div className='Content sizer'>
                     <div className='calendar'>
                         {debugCalendarText}
                     </div>
                     <img className='image'/>
                 </Div>
-		        <Div className='Footer'>
+		        <Div className='Footer sizer'>
 		        </Div>
 		    </Group>
 	  </Panel>

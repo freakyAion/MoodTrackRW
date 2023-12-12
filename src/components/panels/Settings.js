@@ -16,13 +16,13 @@ const Settings = ({ id, go, devmode, toggleDev }) => {
 	    <Panel id={id}>
 		    {panelHeader}
 		    <Group>
-		        <Div className='Header'>
+		        <Div className='Header sizer'>
                     <HomeButton devmode={devmode} go={go}/>
 		        </Div>
-		        <Div className='Content'>
+		        <Div className='Content sizer'>
                     <button onClick={toggleDev}>Toggle Devmode</button>
                 </Div>
-		        <Div className='Footer'>
+		        <Div className='Footer sizer'>
 		        </Div>
 		    </Group>
 	  </Panel>

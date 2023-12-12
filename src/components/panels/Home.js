@@ -27,18 +27,17 @@ const Home = ({ id, go, devmode, todayEmotions }) => {
 	return (
 	  	<Panel className='Panel' id={id}>
 			{panelHeader}
-			<Group className='Group'>
-		  		<Div className='Header'>
+			<div className='Group'>
+		  		<Div className='Header sizer'>
 					<SettingsButton devmode={devmode} go={go}/>
 		  		</Div>
-		  		<Div className='Content'>
+		  		<Div className='Content sizer'>
 					<p>{today}</p>
-
 		  		</Div>
-		  		<Div className='Footer'>
+		  		<div className='Footer sizer'>
 					<Navbar devmode={devmode} go={go}/>
-		  		</Div>
-			</Group>
+		  		</div>
+			</div>
 	  	</Panel>
 	);
 };

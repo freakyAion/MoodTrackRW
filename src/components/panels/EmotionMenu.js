@@ -29,10 +29,10 @@ const EmotionMenu = ({ id, go, devmode}) => {
 	  	<Panel id={id}>
 			{panelHeader}
 			<Group className='EmotionMenu'>
-		  		<Div className='Header'>
+		  		<Div className='Header sizer'>
 					<HomeButton devmode={devmode} go={go}/>
 		  		</Div>
-		  		<Div className='Content'>
+		  		<Div className='Content sizer'>
 					{/*<p>{today}</p>*/}
 					<Div className='emotionContainer'>
 						<Div className='button'>
@@ -52,7 +52,7 @@ const EmotionMenu = ({ id, go, devmode}) => {
 						</Div>
 					</Div>
 		  		</Div>
-		  		<Div className='Footer'>
+		  		<Div className='Footer sizer'>
 		  		</Div>
 			</Group>
 	  	</Panel>

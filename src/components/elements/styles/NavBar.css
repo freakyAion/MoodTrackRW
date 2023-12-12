@@ -1,0 +1,19 @@
+.navbar{
+    background-color: #8BC0CF;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: row;
+
+    padding: 0;
+}
+
+.button{
+    background-color: #8BC0CF;
+    border: 1px solid white;
+
+    height: 100%;
+    width: 100%;
+}
