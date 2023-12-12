@@ -1,0 +1,25 @@
+.conteyner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.imgWithBtn {
+    padding: 0;
+}
+
+.NameEmotion {
+    padding: 0;
+    margin-top: 0;
+}
+
+.text {
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

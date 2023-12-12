@@ -1,0 +1,29 @@
+.line {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 15px;
+    border: none;
+}
+
+.text {
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 128.8%; /* 25.76px */
+    letter-spacing: 0.2px;
+}
+
+.groupEmotion {
+    margin: 34px;
+}

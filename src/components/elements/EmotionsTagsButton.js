@@ -3,7 +3,7 @@ import { Button } from "@vkontakte/vkui";
 
 import './styles/EmotionsTagsButton.css';
 
-const EmotionsTagsButton = ({devmode, go, image, text}) => {
+const EmotionsTagsButton = ({devmode, go, image, text, dataTo}) => {
     let testText = null;
 
     if (devmode) {
@@ -11,7 +11,7 @@ const EmotionsTagsButton = ({devmode, go, image, text}) => {
     }
 
     return(
-        <button className='emotionButton' onClick={go}>
+        <button className='emotionButton' onClick={go} data-to={dataTo}>
             <div className="buttonContent">
                 <div className="imgContent">
                     <div className="imgContainer">

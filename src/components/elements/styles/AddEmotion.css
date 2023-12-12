@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+}
+
+.imgInAddEmotion {
+    width: 98px;
+    height: 98px;
+}
+
+.addBtn {
+    background-color: transparent;
+    width: 34px;
+    height: 32px;
+    padding: 0;
+    border: none;
+}
+
+.addBtn:hover {
+    background-color: #8BC0CF;
+}
+
+.imgBtn {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
