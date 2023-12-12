@@ -3,6 +3,8 @@ import {Button} from '@vkontakte/vkui';
 
 import './styles/SettingsButton.css'    
 
+import Settings from '../img/Menu.svg'
+
 const SettingsButton = ({devmode, go}) => {
     let testText = null;
 
@@ -12,7 +14,7 @@ const SettingsButton = ({devmode, go}) => {
 
     return(
         <button className='settingsButton' onClick={go} data-to="settings">
-			<img className="image"/>
+			<img className="image" src={Settings} alt='Настройки'/>
             <p>{testText}</p>
 		</button>
     );

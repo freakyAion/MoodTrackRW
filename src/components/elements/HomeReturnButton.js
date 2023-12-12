@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './styles/HomeReturn.css'    
+import './styles/HomeReturn.css'  
 
 const HomeButton = ({devmode, go}) => {
     let testText = null;

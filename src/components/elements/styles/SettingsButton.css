@@ -1,0 +1,23 @@
+.settingsButton{
+    height: 43px;
+    width: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    background-color: #8BC0CF;
+    padding: 0;
+
+    border: none;
+
+    border-radius: 10px;
+
+    margin-left: 26px;
+}
+
+.settingsButton:active,
+.settingsButton:hover{
+    background-color: #4B8597;
+}

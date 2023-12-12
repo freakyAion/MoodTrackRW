@@ -5,6 +5,7 @@ import { Vial } from '../elements/Vial';
 import { Panel, PanelHeader, Header, Button, Group, Cell, Div, Avatar } from '@vkontakte/vkui';
 
 import "./styles/Global.css";
+import "./styles/Home.css"
 
 const Home = ({ id, go, devmode, todayEmotions }) => {
 	
@@ -32,7 +33,7 @@ const Home = ({ id, go, devmode, todayEmotions }) => {
 					<SettingsButton devmode={devmode} go={go}/>
 		  		</Div>
 		  		<Div className='Content sizer'>
-					<p>{today}</p>
+					<p className='date'>{today}</p>
 		  		</Div>
 		  		<div className='Footer sizer'>
 					<Navbar devmode={devmode} go={go}/>

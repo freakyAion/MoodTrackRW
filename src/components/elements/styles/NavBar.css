@@ -12,8 +12,19 @@
 
 .button{
     background-color: #8BC0CF;
-    border: 1px solid white;
-
-    height: 100%;
+    border: none;
+    height: 68px;
     width: 100%;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button:active,
+.button:hover{
+    background-color: #4B8597;
 }
