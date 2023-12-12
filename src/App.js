@@ -9,9 +9,10 @@ import Settings from './components/panels/Settings';
 import EmotionMenu from './components/panels/EmotionMenu'
 import EmotionScreen from './components/panels/EmotionScreen';
 import DiagramScreen from './components/panels/DiagramScreen';
-import { getDayData } from './DataBase.js'
+import BeutifulScreen from './components/panels/BeutifulScreen.js';
+import { getDayData } from './DataBase.js';
 
-import './components/panels/styles/Global.css'
+import './components/panels/styles/Global.css';
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('home');
@@ -58,6 +59,7 @@ const App = () => {
 								<Calendar devmode={devmode} id='calendar' go={go}/>
 								<EmotionScreen devmode={devmode} id='emotionWindow' go={go}/>
 								<DiagramScreen devmode={devmode} id='diagram' go={go}/>	
+								<BeutifulScreen devmode={devmode} id='beutiful' go={go} />
 							</View>
 						</SplitCol>
 					</SplitLayout>

@@ -1,0 +1,19 @@
+.contentInDiscription {
+    background-color: #8BC0CF;
+    border-radius: 20px;
+    padding: 0;
+}
+
+.containerDescription {
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
