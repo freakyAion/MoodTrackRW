@@ -1,0 +1,41 @@
+.blockWithButtons {
+    display: flex;
+    flex-direction: row;
+}
+
+.btnMonth {
+    background-color: #8BC0CF;
+    border: none;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #8BC0CF;
+}
+
+.textMonth {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    letter-spacing: 0.1px;
+}
+
+.btnYear {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 2px solid #8BC0CF;
+    padding: 20px;
+}
+
+.textYear {
+    color: #8BC0CF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    letter-spacing: 0.1px;
+}

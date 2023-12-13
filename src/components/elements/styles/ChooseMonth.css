@@ -1,0 +1,31 @@
+.blockChoose {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    background-color: #8BC0CF;
+    width: 156px;
+    border-radius: 8px;
+    padding: 0;
+}
+
+.dataMonth {
+    margin: auto;
+}
+
+.txtMonth {
+    color: var(--light-button-primary-foreground, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    letter-spacing: 0.1px;
+}
+
+.chooseMonth {
+    background-color: transparent;
+    border: none;
+    margin: auto;
+}

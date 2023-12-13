@@ -1,4 +1,28 @@
+.screenDiagram {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*.blockChoose{
+    margin: auto;
+}
+
+.monthAndYear {
+    margin: auto;
+}
+
+.Content {
+    padding: 0;
+}
+
+.pieCharmDiogramm {
+    margin: 0;
+    padding: 0;
+}*/
+
 .pieCharm {
-    width: 283px;
-    height: 283px;
+    padding: 0;
+    width: 350px;
+    height: 350px;
 }
