@@ -3,7 +3,7 @@ import { Div, Textarea } from "@vkontakte/vkui";
 
 import './styles/AddDescription.css';
 
-const AddDiscription = ({devmode}) => {
+const AddDescription = ({devmode}) => {
     let testText = null;
 
     if (devmode) {
@@ -11,10 +11,10 @@ const AddDiscription = ({devmode}) => {
     }
 
     return (
-        <Div className="contentInDiscription">
-            <Div className="containerDescription">
+        <Div className="contentInDescription">
+            <div className="containerDescription">
                 <label className="text">Напишите свои мысли</label>
-            </Div>
+            </div>
 
             <Div className="textarea">
                 <Textarea />
@@ -23,4 +23,4 @@ const AddDiscription = ({devmode}) => {
     )
 };
 
-export {AddDiscription};
+export {AddDescription};

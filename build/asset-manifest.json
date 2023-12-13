@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.88b05be9.css",
+    "main.js": "/static/js/main.a157cef0.js",
+    "static/media/Diagram.svg": "/static/media/Diagram.4605783494f67412e35f969e2fabb7a1.svg",
+    "static/media/GoodImage.svg": "/static/media/GoodImage.c6c3fea3a1e73df86573ded8874dee04.svg",
+    "static/media/BadImage.svg": "/static/media/BadImage.c33ec6cb2525116bf53bdd1547df15d6.svg",
+    "static/media/Home.svg": "/static/media/Home.3a493e3944e4f5c638de17f04a704d26.svg",
+    "static/media/Calendar.svg": "/static/media/Calendar.8d19b5c7629fdd3fcc462078424d022c.svg",
+    "static/media/AwfulImage.svg": "/static/media/AwfulImage.6d7ec7f1237e3d3e5fb13fc0decbcb7e.svg",
+    "static/media/Great.svg": "/static/media/Great.ff9130b2324d2fd0440842c89fb8551e.svg",
+    "static/media/Menu.svg": "/static/media/Menu.ecd1d8d4e5def00f7821d60e1c539937.svg",
+    "static/media/Add.svg": "/static/media/Add.baf6c8b40fc06cb1a1033722322f8499.svg",
+    "index.html": "/index.html",
+    "static/media/AddBtn.svg": "/static/media/AddBtn.952040991e268d92bf5f5e285f908c4a.svg",
+    "static/media/NormalImage.svg": "/static/media/NormalImage.f0ed8c945749f431f5f8733d69a358df.svg",
+    "main.88b05be9.css.map": "/static/css/main.88b05be9.css.map",
+    "main.a157cef0.js.map": "/static/js/main.a157cef0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.88b05be9.css",
+    "static/js/main.a157cef0.js"
+  ]
+}

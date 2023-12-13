@@ -7,9 +7,12 @@ import Home from './components/panels/Home';
 import Calendar from './components/panels/Calendar';
 import Settings from './components/panels/Settings';
 import EmotionMenu from './components/panels/EmotionMenu'
-import EmotionScreen from './components/panels/EmotionScreen';
+import { Beatiful } from './components/panels/EmotionScreensCrutch/Beatiful.js';
+import { Good } from './components/panels/EmotionScreensCrutch/Good.js';
+import { Normal } from './components/panels/EmotionScreensCrutch/Normal.js';
+import { Bad } from './components/panels/EmotionScreensCrutch/Bad.js';
+import { Awful } from './components/panels/EmotionScreensCrutch/Awful.js';
 import DiagramScreen from './components/panels/DiagramScreen';
-import BeutifulScreen from './components/panels/BeutifulScreen.js';
 import { getDayData } from './DataBase.js';
 
 import './components/panels/styles/Global.css';
@@ -72,9 +75,12 @@ const App = () => {
 								<Settings devmode={devmode} toggleDev={toggleDev} id='settings' go={go}/>
 								<EmotionMenu devmode={devmode} id='emotionMenu' go={go}/>
 								<Calendar devmode={devmode} id='calendar' go={go}/>
-								<EmotionScreen emotionSwitcher={emotionSwitch} devmode={devmode} id='emotionWindow' go={go}/>
+								<Beatiful emotionHandle={emotionSwitch} devmode={devmode} id='beatiful' go={go}/>
+								<Good emotionHandle={emotionSwitch} devmode={devmode} id='good' go={go}/>
+								<Normal emotionHandle={emotionSwitch} devmode={devmode} id='normal' go={go}/>
+								<Bad emotionHandle={emotionSwitch} devmode={devmode} id='bad' go={go}/>
+								<Awful emotionHandle={emotionSwitch} devmode={devmode} id='awful' go={go}/>
 								<DiagramScreen devmode={devmode} id='diagram' go={go}/>	
-								<BeutifulScreen devmode={devmode} id='beutiful' go={go} />
 							</View>
 						</SplitCol>
 					</SplitLayout>

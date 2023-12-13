@@ -16,11 +16,11 @@ const AddEmotion = ({devmode, go, image}) => {
                 <img className="imgInAddEmotion" src={image} />
             </div>
 
-            <div className="btnContent">
+            {/*<div className="btnContent">
                 <button className="addBtn">
                     <img className="imgBtn" src={AddButton} />
                 </button>
-            </div>
+            </div>*/}
         </div>
     )
 };

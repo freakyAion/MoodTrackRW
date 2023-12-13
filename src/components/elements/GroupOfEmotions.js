@@ -9,9 +9,15 @@ const GroupOfEmotion = ({devmode, firstEmotion, secondEmotion}) => {
         testText = "Emotions InGroup";
     }
 
+    const [buttonState, setButtonState] = React.useState("btn_off");
+
+    const switchState = () => {
+        setButtonState(state => state === "btn_off" ? "btn_on" : "btn_off");
+    };
+
     return (
         <Div className="line">
-            <button className="btn">
+            <button className={`btn ${buttonState}`}>
                 <label className="text">{firstEmotion}</label>
             </button>
 

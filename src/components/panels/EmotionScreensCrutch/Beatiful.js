@@ -1,20 +1,22 @@
 import React from "react";
-import { HomeButton } from "../elements/HomeReturnButton";
-import { AddEmotion } from "../elements/AddEmotion";
+import { HomeButton } from "../../elements/HomeReturnButton";
+import { AddEmotion } from "../../elements/AddEmotion";
 import { Div, Group, Panel, PanelHeader } from "@vkontakte/vkui";
-import Beutiful from '../img/Great.svg';
-import { GroupOfEmotion } from "../elements/GroupOfEmotions";
-import { AddDiscription } from "../elements/AddDescription";
+import Great from '../../img/Great.svg';
+import { GroupOfEmotion } from "../../elements/GroupOfEmotions";
+import { AddDescription } from "../../elements/AddDescription";
 
-import "./styles/Global.css";
-import './styles/BeutifulScreen.css';
+import "../styles/Global.css";
+import "../styles/BeutifulScreen.css";
 
-const BeutifulScreen =({id, go, devmode}) => {
+const Beatiful =({id, go, devmode, emotionHandle}) => {
     let panelHeader = null;
 
     if (devmode) {
         panelHeader = <PanelHeader>BeutifulScreen</PanelHeader>
     }
+
+   
 
     return (
         <Panel id={id}>
@@ -27,7 +29,7 @@ const BeutifulScreen =({id, go, devmode}) => {
                 <Div className="conteyner">
                     <Div className="imgWithBtn">
                         <Div>
-                            <AddEmotion devmode={devmode} image={Beutiful} />
+                            <AddEmotion devmode={devmode} image={Great} />
                         </Div>
                     </Div>  
 
@@ -50,12 +52,13 @@ const BeutifulScreen =({id, go, devmode}) => {
                     </Div>
                 </Div>
 
-                <Div>
-                    <AddDiscription />
+                <Div className="crutch">
+                    <AddDescription />
+                    <button onClick={()=> {emotionHandle("perfect")}} className="button">Добавить</button>
                 </Div>
             </Group>
         </Panel>
     )
 };
 
-export default BeutifulScreen;
+export { Beatiful };
